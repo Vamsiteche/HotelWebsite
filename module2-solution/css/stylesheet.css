@@ -1,1 +1,14 @@
-p
+h1{
+	font-family: cursive, sans-serif;
+	font-size: 175%; 
+	text-align: center;
+}
+p{
+	background-color: gray;
+	font-family: cursive, sans-serif;
+	border: 1px solid black;
+	width: 50px;
+	padding: 1px;
+    margin: 1px 1px 1px 1px;
+}
+
