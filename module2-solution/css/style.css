@@ -1,22 +1,27 @@
+*{
+	overflow: hidden;
+	box-sizing: border-box;
+}
 h1{
 	font-family: cursive, sans-serif;
 	font-size: 175%; 
 	text-align: center;
 }
-h2 h3 h4{
+h2,h3,h4{
 	text-align: center;
 	font-size: 125%;
 	font-family: cursive, sans-serif;
 	border: 1px solid black;
-	padding: 1px;
 	float: right;
 	position: relative;
-    right:0px;
-    top:0px;
-    width: 30%;
+	top:0px;
+	right: 0px;
+	margin: 0px 0px 0px 0px;
+	width:150px;
+	height: 30px;
 }
 #h2{
-	background-color: maroon;
+	background-color: orange;
 }
 #h3{
 	background-color: blue;
@@ -25,31 +30,59 @@ h2 h3 h4{
 	background-color: green;
 }
 section{
-	background-color: gray;
+	background-color: #AAAAAA;
 	font-family: cursive, sans-serif;
 	border: 1px solid black;
-	padding: 1px;
-    margin: 2px 2px 2px 2px;
+	box-sizing: border-box;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 24px;
 }
+
+p{
+	clear: right;
+	overflow: hidden;
+	padding:10px; 
+}
+
 .row{
 	width:100%;
 }
-p{
-	clear: right;
-}
+
 @media (min-width:992px){
-	.sec1,.sec2,.sec3{
-		float: left;
-		box-sizing: border-box;
-		width: 33.33%;
+	.col-lg-3{
+		float:left;
+    	width:28%;
+    	height:180px;
 	}
-}
-@media(min-width: 768px) and (max-width: 991px){
-	.sec1,.sec2{
-		float: left;
-		box-sizing: border-box;
-		width: 50%;
+	h1{
+		margin-bottom: 100px;
 	}
 } 
+@media(min-width: 768px) and (max-width: 991px){
+	h1{
+		margin-bottom: 50px;
+	}
+	.col-m-2{
+		float: left;
+		width: 44%;
+		height: 180px;
 
-
+	}
+	.col-m-1{
+		float: left;
+		width: 93%;
+		height: 180px; 
+	}
+}
+@media(max-width: 767px)
+{
+	h1{
+		margin-bottom: 25px;
+	}
+	.col-s-1{
+		width: 95%;
+		height: 180px;
+	}
+}
